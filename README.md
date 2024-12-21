@@ -4,7 +4,7 @@
 **注意**:本项目大量使用了ai编写，我只是作了修改，可能会有很多bug，请指出  
 
 ### 使用教程  
-1.下载zip文件(在文件里，不是github的），解压到你服务器存放banned-players.json文件的目录  
+1.下载zip文件（Github的zip需要再把python.zip解压到python文件夹下，建议直接下载MCBanlist.zip），解压到你服务器存放banned-players.json文件的目录（不要放进文件夹）
 文件结构一般为下方所示  
 MC服务器文件夹  
 |__服务器文件  
