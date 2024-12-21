@@ -26,6 +26,16 @@ css文件：static/css/index.css
 3.ip后填写监听IP，可以是0.0.0.0
 4.port后填写端口
 
+添加语言：
+1.打开templates文件夹，从上面复制一个文件，改名成你喜欢的名字
+2.修改这个文件，把里面的注释，标签里的文字全部翻译成你想要的语言
+3.打开server.py，从上方复制，文件内已经说明了从哪里复制到哪里，粘贴到哪里
+4.把@app.route('/')里的“/”改成“/你想要的名字”（注意：改的是你复制的，不是原来的）
+5.把return render_template('chinese.html', data=extracted_data, config=server_name)中的“chinese.html”改成“你在步骤1里为html取的名字.html”
+6.在所有html里添加超链接，通向/你在步骤4里取的名字，类设置为lang_a，添加到哪里文件也说了
+7.在你复制的html文件内的p标签处加上 | 你的语言名，类设置为lang_p，哪个p标签也在文件内
+8.打开网页，看看效果
+
 其他提示：
 1.基于python，需要python环境
 2.有了python之后运行这个命令
