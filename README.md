@@ -10,6 +10,6 @@ MC服务器文件夹
 |__服务器文件  
 |__banned-players.json  
 |__从zip解压出来的文件(非文件夹）  
-确定结构为上方所示后，双击server.py启动(需要Python环境并安装flask库)  
+2.确定结构为上方所示后，双击server.py启动(需要Python环境并安装flask库)  
 或者双击bat启动(无需安装任何东西，但要确定有Python文件夹)  
 **请不要复制zip里的banned-players.json，不要用它替换原有的**  
