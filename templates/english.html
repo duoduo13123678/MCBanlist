@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ config }}-Banned Players List</title>
+        <!--I don't want the icon to delete the following two lines-->
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+        <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+        <!--That's it, don't delete too much-->
+        <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Banned Players</h1>
+            <!--Add to the p tag below-->
+            <p class="lang_p"><a href="/" class="lang_a">中文</a> | English</p>
+            <ul>
+                {% for item in data %}
+                    <li class="player-info">
+                        <img src="https://crafatar.com/avatars/{{ item.uuid }}?size=128" alt="Avatar"><br>
+                        <strong>Name:</strong> {{ item.name }}<br>
+                        <strong>Ban Time:</strong> {{ item.created }}<br>
+                        <strong>Reason:</strong> {{ item.reason }}
+                    </li>
+                {% endfor %}
+            </ul>
+            <div id="tips">
+                <p id="tip">This page is the page of the Minecraft server {{ config }}, and it is forbidden to spread rumors about other servers</p>
+                <p id="author">Made by <a href="https://space.bilibili.com/1055474496">duoduo13123678</a></p>
+                <!--It is forbidden to delete the above two messages, but you can change the {{config}} hyperlink to your own page, or modify the text and content you don't like-->
+                <!--Example of a hyperlink：<a href="Your Server Link">{{config}}</a>-->
+            </div>
+        </div>
+    </body>
+</html>
