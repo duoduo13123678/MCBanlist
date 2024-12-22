@@ -6,9 +6,8 @@ import time
 texts = "_abcdefgh_igklm_nopqrstuvwxy_z"
 data = []
 
-#input("将会生成大量随机封禁玩家，继续吗？")
 with open('banned-players.json','w') as f:
-    for i in range(int(input())):
+    for i in range(int(input("玩家数："))):
         name = ""
         for i in range(random.randint(5,7)):
             name += texts[random.randint(0,29)]
