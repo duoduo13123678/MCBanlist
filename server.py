@@ -13,6 +13,7 @@ server_port = settings["port"]
 print(f"服务器名称：{server_name}\n监听地址：{server_ip}:{server_port}")
 
 # 路由，返回提取的数据
+
 #从下方开始复制
 @app.route('/')
 def home():
@@ -54,6 +55,14 @@ def english():
     return render_template('english.html', data=extracted_data, config=server_name)
 #在下面粘贴
 
+
+@app.errorhandler(404)
+def error_404(s):
+    return render_template('404.html', config=server_name)
+
+@app.errorhandler(500)
+def error_500(s):
+    return render_template('500.html', config=server_name)
 
 if __name__ == '__main__':
     app.run(host=server_ip,port=server_port)
