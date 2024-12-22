@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--不想要图标删除下面两行-->
+        <!--I don't want the icon to delete the following two lines-->
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+        <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+        <!--删到这就行，别删多了-->
+        <!--That's it, don't delete too much-->
+        <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+        <title>Error 404 - {{ config }}</title>
+    </head>
+    <body>
+        <div class="container">
+            <h2>你尝试访问的页面不存在</h2>
+            <h3>The page you're trying to access doesn't exist</h3>
+            <p>请检查URL或联系管理员</p>
+            <p>Please check the URL or contact the administrator</p>
+            <a href="">尝试刷新 | Try refreshing</a><br>
+            <br><a href="/">回到中文页面</a><br>
+            <br><a href="/en">Back to English page</a>
+            <p id="tip">该页面为Minecraft服务器{{ config }}的页面，禁止造谣成其他服务器的页面</p>
+            <p id="tip">This page is the page of the Minecraft server {{ config }}, and it is forbidden to spread rumors about other servers</p>
+            <p id="author">Made by <a href="https://space.bilibili.com/1055474496">duoduo13123678</a></p>
+            <!--禁止删除以上四条信息，但你可以给{{config}}处改成超链接以引向自己的页面，或者修改自己不喜欢的文本，内容-->
+            <!--超链接例子：<a href="你的服务器链接">{{config}}</a>-->
+        </div>
+    </body>
+</html>
