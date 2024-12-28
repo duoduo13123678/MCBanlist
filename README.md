@@ -21,8 +21,8 @@ MC服务器文件夹
 **请不要复制zip里的banned-players.json，不要用它替换原有的**  
 
 - 对网页**内容，颜色，排版**不满意请到这些地方修改：  
-中文HTML文件：templates/chinese.html
-英语HTML文件: templates/english.html   
+中文HTML文件：templates/chinese.html  
+英语HTML文件: templates/english.html  
 css文件：static/css/index.css  
 图标文件：static/favicon.ico  
 
