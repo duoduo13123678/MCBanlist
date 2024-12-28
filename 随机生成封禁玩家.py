@@ -7,7 +7,7 @@ texts = "_abcdefgh_igklm_nopqrstuvwxy_z"
 data = []
 
 with open('banned-players.json','w') as f:
-    for i in range(int(input("玩家数："))):
+    for i in range(int(input("玩家数量："))):
         name = ""
         for i in range(random.randint(5,7)):
             name += texts[random.randint(0,29)]
